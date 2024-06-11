@@ -1,0 +1,107 @@
+.container{
+    width: 50%;
+    margin:auto;
+}
+
+body {
+    background-color: #ffffff; /* Ganti dengan warna latar belakang yang lebih netral */
+    color: #333; /* Ganti dengan warna teks yang lebih gelap */
+    font-family: Arial, sans-serif; 
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff; /* Ganti dengan warna latar belakang yang lebih bersih */
+    padding: 20px;
+    border-radius: 8px; /* Mengurangi sudut untuk memberikan tampilan yang lebih halus */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih halus */
+}
+
+.input{
+    margin: 0 0 20px 0; 
+    display: flex;
+    justify-content: space-between;
+}   
+
+.labels,.inputs{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.inputs{
+    width: 45%;
+}
+
+.inputs > * {
+    height: 18px;
+}
+
+.labels > *{
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.labels {
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+}
+
+th {
+    background-color: #4CAF50; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Warna latar belakang baris genap */
+        
+}
+tr:hover {
+    background-color: #ddd; /* Warna latar belakang saat baris dihover */
+}
+
+
+.result > h1{
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+
+button{
+    height: 40px;
+    border: none;
+    background-color: #4CAF50; /* Warna hijau yang terlihat profesional */
+    color: white; /* Teks putih untuk kontras */
+    border-radius: 5px; /* Sudut yang lebih kecil */
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 250ms;
+    width: 100%;
+}
+
+button:hover{
+    background-color: #45a049; /* Perubahan warna saat dihover untuk umpan balik visual */
+}
+
+.hidden{
+    display: none !important;
+}
+
+.reset{
+    margin-top: 20px;
+    text-align: center;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Generator Bilangan Psedourandom</title>
+</head>
+<body>
+    <form>
+        <div class="container">
+            <div class="calculator">
+                <h1>Generator Bilangan Psedourandom</h1>
+                <h2>Form Input</h2>
+                <div class="input">
+                    <div class="labels">
+                        <label for="m">Masukkan nilai modulus (m) </label>
+                        <label for="a">Masukkan nilai pengali (a) </label>
+                        <label for="c">Masukkan nilai inkrement (c) </label>
+                        <label for="x0">Masukkan nilai benih (x0) </label>
+                        <label for="n">Masukkan jumlah bilangan yang ingin dihasilkan (n) </label>
+                    </div>
+                    <div class="inputs">
+                        <input type="number" id="m" vsalue="0" min="0">
+                        <input type="number" id="a" value="0" min="0">
+                        <input type="number" id="c" value="0" min="0">
+                        <input type="number" id="x0" value="0" min="0">
+                        <input type="number" id="n" value="0" min="0">
+                    </div>
+                </div>
+                <button type="button" id="calculate">Hitung</button>
+                <button class="reset" type="reset">Reset</button>
+
+            </div>
+            <div class="result hidden">
+                <h1>Hasil</h1>
+                <table>
+                    <thead>
+                        <tr class="thead">
+                            <th>Iterasi</th>
+                            <th>Xn</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr >
+                            <td>0</td>
+                            <td>20</t>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
